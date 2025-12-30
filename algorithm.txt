@@ -1,0 +1,19 @@
+START
+    SET HealthParameters = ["Age", "Weight", "Height", "BloodPressure", "BloodSugar"]
+
+    FOR EACH parameter IN HealthParameters DO
+        WHILE TRUE DO
+            PROMPT user to enter value for parameter
+            READ value
+
+            IF value > 0 THEN
+                STORE value
+                BREAK
+            ELSE
+                PRINT "Invalid input, please enter a positive number"
+            END IF
+        END WHILE
+    END FOR
+
+    PRINT "All health data collected successfully."
+END
