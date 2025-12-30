@@ -1,5 +1,5 @@
 START
-    SET HealthParameters = ["Age", "Weight", "Height", "BloodPressure", "BloodSugar"]
+    SET HealthParameters = ["Age", "Weight", "Height", "BloodPressure", ]
 
     FOR EACH parameter IN HealthParameters DO
         WHILE TRUE DO
@@ -17,3 +17,4 @@ START
 
     PRINT "All health data collected successfully."
 END
+
