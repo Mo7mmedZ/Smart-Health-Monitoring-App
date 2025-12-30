@@ -6,7 +6,7 @@ START
             PROMPT user to enter value for parameter
             READ value
 
-            IF value > 0 THEN
+            IF value > 1 THEN
                 STORE value
                 BREAK
             ELSE
@@ -17,3 +17,4 @@ START
 
     PRINT "All health data collected successfully."
 END
+
